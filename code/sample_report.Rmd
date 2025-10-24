@@ -1,0 +1,21 @@
+---
+title: "Sample Portfolio Report"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Introduction
+
+This is a sample R Markdown file for your e-portfolio. It includes a small dataset and basic visualisation.
+
+```{r read-data}
+data <- read.csv("../data/placeholder_data.csv")
+head(data)
+```
+
+```{r plot}
+plot(data$id, data$value, type = "b", main = "Simple Plot")
+```
